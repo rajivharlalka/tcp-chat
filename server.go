@@ -38,7 +38,7 @@ func (s *server) run() {
 }
 
 func (s *server) newClient(conn net.Conn) {
-	log.Printf("new client has connected: %s", conn.RemoteAddr().String)
+	log.Printf("new client has connected: %s", conn.RemoteAddr().String())
 
 	c := &client{
 		conn:     conn,
